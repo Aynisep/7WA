@@ -1,0 +1,152 @@
+@startuml
+class fr.isep.game7wonderarch.utils.JoueurControler {
+}
+class fr.isep.game7wonderarch.wonders.Halicarnasse {
+}
+class fr.isep.game7wonderarch.wonders.Rhodes {
+}
+enum fr.isep.game7wonderarch.domain.ScienceCategory {
++  Law
++  Mechanic
++  Architect
+}
+class fr.isep.game7wonderarch.domain.ProgressTokens {
+}
+enum fr.isep.game7wonderarch.domain.CardType {
++  CardMaterialWood
++  CardMaterialPaper
++  CardMaterialBrick
++  CardMaterialStone
++  CardMaterialGlass
++  CardMaterialGold
++  CardScienceLaw
++  CardScienceMechanic
++  CardScienceArchitect
++  CardWar_barbarian
++  CardWar_centurion
++  CardWar_archer
++  CardPolitic_emperor
++  CardPolitic_cat
+}
+class fr.isep.game7wonderarch.test.TestJoueur {
+}
+abstract class fr.isep.game7wonderarch.wonders.WonderStructure {
+}
+class fr.isep.game7wonderarch.game.Deck {
+}
+class fr.isep.game7wonderarch.domain.Card {
+}
+enum fr.isep.game7wonderarch.domain.ProgressToken {
++  Urbanism
++  ArtsAndCrafts
++  Jewelry
++  Science
++  Propaganda
++  Architecture
++  Economy
++  Ingeniery
++  Tactic
++  Decoration
++  Politic
++  Strategy
++  Education
++  Culture
+}
+enum fr.isep.game7wonderarch.domain.CardCategory {
++  MaterialCard
++  ProgressCard
++  WarCard
++  PoliticCard
+}
+enum fr.isep.game7wonderarch.domain.Wonder {
++  Alexandrie
++  Halicarnasse
++  Ephese
++  Olympie
++  Babylone
++  Rhodes
++  Gizeh
+}
+enum fr.isep.game7wonderarch.domain.CardBack {
++  CentralDeck
++  Alexandrie
++  Halicarnasse
++  Ephese
++  Olympie
++  Babylone
++  Rhodes
++  Gizeh
+}
+enum fr.isep.game7wonderarch.domain.Material {
++  Wood
++  Paper
++  Brick
++  Stone
++  Glass
++  Gold
+}
+class fr.isep.game7wonderarch.domain.CardDecks {
+}
+class fr.isep.game7wonderarch.domain.CardDecks.CardTypeQuantity {
+}
+class fr.isep.game7wonderarch.utils.JoueurGUIParser {
+}
+class fr.isep.game7wonderarch.wonders.Olympie {
+}
+class fr.isep.game7wonderarch.wonders.Alexandrie {
+}
+enum fr.isep.game7wonderarch.domain.WonderCardType {
++  AlexandrieBack
++  AlexandrieFront
++  BabylonBack
++  BabylonFront
++  EpheseBack
++  EpheseFront
++  GizehBack
++  GizehFront
++  HalicarnasseBack
++  HalicarnasseFront
++  OlympieBack
++  OlympieFront
++  RhodesBack
++  RhodesFront
+}
+class fr.isep.game7wonderarch.wonders.Gizeh {
+}
+class fr.isep.game7wonderarch.game.Joueur {
+}
+enum fr.isep.game7wonderarch.domain.ConflictTokens {
++  deux_joueurs
++  trois_joueurs
++  quatre_joueurs
++  cinq_joueurs
++  six_joueurs
++  sept_joueurs
+}
+class fr.isep.game7wonderarch.wonders.WonderConstructionSteps {
+}
+class fr.isep.game7wonderarch.wonders.Babylon {
+}
+class fr.isep.game7wonderarch.wonders.Ephese {
+}
+
+fr.isep.game7wonderarch.wonders.WonderStructure <|-- fr.isep.game7wonderarch.wonders.Rhodes
+fr.isep.game7wonderarch.wonders.WonderStructure <|-- fr.isep.game7wonderarch.wonders.Halicarnasse
+
+fr.isep.game7wonderarch.domain.CardDecks *-- fr.isep.game7wonderarch.domain.CardDecks.CardTypeQuantity
+javafx.application.Application <|-- fr.isep.game7wonderarch.utils.JoueurGUIParser
+fr.isep.game7wonderarch.wonders.WonderStructure <|-- fr.isep.game7wonderarch.wonders.Olympie
+fr.isep.game7wonderarch.wonders.WonderStructure <|-- fr.isep.game7wonderarch.wonders.Alexandrie
+fr.isep.game7wonderarch.wonders.WonderStructure <|-- fr.isep.game7wonderarch.wonders.Gizeh
+fr.isep.game7wonderarch.game.Comparable <|.. fr.isep.game7wonderarch.game.Joueur
+fr.isep.game7wonderarch.wonders.WonderStructure <|-- fr.isep.game7wonderarch.wonders.Babylon
+fr.isep.game7wonderarch.wonders.WonderStructure <|-- fr.isep.game7wonderarch.wonders.Ephese
+fr.isep.game7wonderarch.domain.ProgressTokens *-- fr.isep.game7wonderarch.domain.ProgressToken
+fr.isep.game7wonderarch.domain.CardCategory *-- fr.isep.game7wonderarch.domain.ScienceCategory
+fr.isep.game7wonderarch.domain.Card *-- fr.isep.game7wonderarch.domain.CardCategory
+fr.isep.game7wonderarch.domain.CardCategory *-- fr.isep.game7wonderarch.domain.Material
+
+fr.isep.game7wonderarch.domain.CardDecks *-- fr.isep.game7wonderarch.domain.CardBack
+fr.isep.game7wonderarch.domain.CardCategory *-- fr.isep.game7wonderarch.domain.CardType
+fr.isep.game7wonderarch.domain.CardDecks *-- fr.isep.game7wonderarch.domain.WonderCardType
+@enduml

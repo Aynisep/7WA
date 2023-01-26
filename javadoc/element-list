@@ -1,0 +1,6 @@
+module:com.example.SevenWonders
+fr.isep.game7wonderarch.domain
+fr.isep.game7wonderarch.game
+fr.isep.game7wonderarch.test
+fr.isep.game7wonderarch.utils
+fr.isep.game7wonderarch.wonders
